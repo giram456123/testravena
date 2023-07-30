@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="centered-image-container">
+        <img src="seriaa/3/0.jpg" class="centered-image" width="100%"> <br>
+    </div>
+    <div class="image-container">
+        <a onclick="updateScore(event) ">
+            <img src="seriaa/3/1.jpg" alt="" id="correct">
+        </a>
+        <a onclick="updateScore(event)">
+            <img src="seriaa/3/2.jpg" alt="" id="wrong">
+        </a>
+        <a onclick="updateScore(event)">
+            <img src="seriaa/3/3.jpg" alt="" id="wrong">
+        </a>
+        <a onclick="updateScore(event)">
+            <img src="seriaa/3/4.jpg" alt="" id="wrong">
+            <div class="overlay" ></div>
+        </a>
+        <a onclick="updateScore(event)">
+            <img src="seriaa/3/5.jpg" alt="" id="wrong">
+        </a>
+        <a onclick="updateScore(event)">
+            <img src="seriaa/3/6.jpg" alt="" id="wrong">
+        </a>
+    </div>
+    <audio id="correctAudio">
+        <source src="correct.mp3" type="audio/mpeg">
+    </audio>
+    
+    <audio id="wrongAudio">
+        <source src="wrong.mp3" type="audio/mpeg">
+    </audio>
+    <div class="centered-button">
+        
+        <a onclick="nullscore()"  class="custom-button" >Начать сначала</a>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
